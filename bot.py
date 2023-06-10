@@ -130,7 +130,7 @@ async def back_to_main_menu(message: types.Message, state: FSMContext) -> None:
 #  обработчик команды "Добавить напонинание"
 @dp.message_handler(Text(equals="Добавить напоминание"))
 async def cmd_add_notify(message: types.Message) -> None:
-    await message.answer("Введите текст напоминания",
+    await message.answer("Введите текст напоминания!",
                         reply_markup=get_back_kb())
     await NotificationStatesGroup.description.set()  # установили состояние описания
 
