@@ -8,7 +8,7 @@ def get_main_kb() -> ReplyKeyboardMarkup:
     :return:
     """
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
-    kb.add(KeyboardButton('Добавить напоминание'), KeyboardButton('Редактировать текущие дела')) \
+    kb.add(KeyboardButton('Добавить напоминание!!!'), KeyboardButton('Редактировать текущие дела')) \
         .add(KeyboardButton('Посмотреть запланированные дела'), KeyboardButton('Посмотреть завершенные дела'))
     return kb
 
